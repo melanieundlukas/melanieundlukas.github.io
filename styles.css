@@ -1,0 +1,481 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #fefefe;
+}
+
+header {
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    padding: 2rem 1rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    color: #2c3e50;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #7f8c8d;
+    font-style: italic;
+}
+
+nav {
+    margin-bottom: 1rem;
+}
+
+.nav-link {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #2980b9;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.events-overview {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.events-overview h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #2c3e50;
+}
+
+.events-overview p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    color: #7f8c8d;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.events-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.event-card {
+    background: white;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.event-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+}
+
+.event-card.highlight {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+}
+
+.event-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #2c3e50;
+}
+
+.event-card.highlight h3 {
+    color: white;
+}
+
+.event-card .location {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    color: #7f8c8d;
+}
+
+.event-card.highlight .location {
+    color: #ecf0f1;
+}
+
+.event-card .date {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #f39c12;
+}
+
+.event-card.highlight .date {
+    color: #f1c40f;
+}
+
+.event-card .description {
+    margin-bottom: 1.5rem;
+    color: #7f8c8d;
+}
+
+.event-card.highlight .description {
+    color: #ecf0f1;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: #3498db;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-weight: 500;
+}
+
+.btn:hover {
+    background-color: #2980b9;
+}
+
+.event-card.highlight .btn {
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 2px solid white;
+}
+
+.event-card.highlight .btn:hover {
+    background-color: white;
+    color: #667eea;
+}
+
+.timeline {
+    margin-bottom: 3rem;
+}
+
+.timeline h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #2c3e50;
+}
+
+.timeline-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-marker {
+    width: 20px;
+    height: 20px;
+    background-color: #3498db;
+    border-radius: 50%;
+    margin-right: 1rem;
+    flex-shrink: 0;
+}
+
+.timeline-marker.highlight {
+    background-color: #f39c12;
+}
+
+.timeline-content h4 {
+    font-size: 1.2rem;
+    margin-bottom: 0.25rem;
+    color: #2c3e50;
+}
+
+.timeline-content p {
+    color: #7f8c8d;
+}
+
+.event-details {
+    margin-bottom: 3rem;
+}
+
+.event-hero {
+    text-align: center;
+    margin-bottom: 3rem;
+    padding: 2rem;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    border-radius: 10px;
+}
+
+.ceremony-hero {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+}
+
+.event-hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #2c3e50;
+}
+
+.ceremony-hero h2 {
+    color: white;
+}
+
+.event-hero .location {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+    color: #7f8c8d;
+}
+
+.ceremony-hero .location {
+    color: #ecf0f1;
+}
+
+.event-hero .subtitle {
+    font-size: 1.1rem;
+    font-style: italic;
+    color: #7f8c8d;
+}
+
+.ceremony-hero .subtitle {
+    color: #ecf0f1;
+}
+
+.details-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.detail-card {
+    background: white;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.detail-card h3 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    color: #2c3e50;
+}
+
+.detail-card p {
+    margin-bottom: 1rem;
+    color: #7f8c8d;
+}
+
+.detail-card ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.detail-card li {
+    margin-bottom: 0.5rem;
+    color: #7f8c8d;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.detail-card li:before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #27ae60;
+    font-weight: bold;
+}
+
+.detail-card em {
+    color: #e74c3c;
+    font-style: italic;
+}
+
+.rsvp-section {
+    text-align: center;
+    padding: 2rem;
+    background: linear-gradient(135deg, #f39c12 0%, #e67e22 100%);
+    color: white;
+    border-radius: 10px;
+    margin-bottom: 3rem;
+}
+
+.rsvp-section h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.rsvp-section p {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+.ceremony-schedule {
+    margin-bottom: 3rem;
+}
+
+.ceremony-schedule h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    color: #2c3e50;
+    text-align: center;
+}
+
+.schedule-item {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+}
+
+.schedule-item .time {
+    font-weight: bold;
+    color: #3498db;
+    margin-right: 1rem;
+    min-width: 150px;
+}
+
+.schedule-item .event {
+    color: #7f8c8d;
+}
+
+.navigation {
+    margin-bottom: 3rem;
+}
+
+.nav-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem;
+    background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+    color: white;
+    margin-top: 3rem;
+}
+
+footer p {
+    font-size: 1.1rem;
+    font-style: italic;
+}
+
+footer a {
+    color: #f1c40f;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #f39c12;
+    text-decoration: underline;
+}
+
+.photo-card {
+    text-align: center;
+}
+
+.couple-photo {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+    margin: 1rem 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.engagement-photo {
+    margin-bottom: 3rem;
+}
+
+.engagement-container {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.engagement-image {
+    width: 300px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    flex-shrink: 0;
+}
+
+.engagement-text {
+    flex: 1;
+}
+
+.engagement-text h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #2c3e50;
+}
+
+.engagement-text p {
+    font-size: 1.1rem;
+    color: #7f8c8d;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+    
+    .events-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .details-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .event-hero h2 {
+        font-size: 2rem;
+    }
+    
+    .nav-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .schedule-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .schedule-item .time {
+        margin-right: 0;
+        margin-bottom: 0.5rem;
+    }
+    
+    .engagement-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 2rem;
+    }
+    
+    .engagement-image {
+        width: 250px;
+    }
+}
