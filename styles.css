@@ -392,7 +392,7 @@ main {
 .rsvp-section {
     text-align: center;
     padding: 2rem;
-    background: linear-gradient(135deg, #8B4513 0%, #A0522D 100%);
+    background: linear-gradient(135deg, #B8860B 0%, #D4AF37 100%);
     color: white;
     border-radius: 10px;
     margin-bottom: 3rem;
@@ -465,7 +465,7 @@ footer p {
 }
 
 footer a {
-    color: #f1c40f;
+    color: #D4AF37;
     text-decoration: none;
 }
 
