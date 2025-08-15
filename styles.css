@@ -312,7 +312,7 @@ main {
 }
 
 .detail-card em {
-    color: #e74c3c;
+    color: #7c5e4f;
     font-style: italic;
 }
 
@@ -470,7 +470,7 @@ footer a {
 }
 
 footer a:hover {
-    color: #f39c12;
+    color: #94b4a3;
     text-decoration: underline;
 }
 
