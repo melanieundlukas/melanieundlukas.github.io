@@ -21,12 +21,12 @@ header {
 header h1 {
     font-size: 2.5rem;
     margin-bottom: 0.5rem;
-    color: white;
+    color: #f1efe8;
 }
 
 header p {
     font-size: 1.2rem;
-    color: #ecf0f1;
+    color: #f1efe8;
     font-style: italic;
 }
 
@@ -92,8 +92,8 @@ main {
 }
 
 .event-card.highlight {
-    background: linear-gradient(135deg, #f5f7fa 0%, #6c868e 100%);
-    color: white;
+    background: #6c868e;
+    color: #f1efe8;
 }
 
 .event-card h3 {
@@ -103,7 +103,7 @@ main {
 }
 
 .event-card.highlight h3 {
-    color: white;
+    color: #f1efe8;
 }
 
 .event-card .location {
@@ -113,7 +113,7 @@ main {
 }
 
 .event-card.highlight .location {
-    color: #ecf0f1;
+    color: #f1efe8;
 }
 
 .event-card .date {
@@ -133,7 +133,7 @@ main {
 }
 
 .event-card.highlight .description {
-    color: #ecf0f1;
+    color: #f1efe8;
 }
 
 .btn {
@@ -219,37 +219,37 @@ main {
 
 .ceremony-hero {
     background: linear-gradient(135deg, #f5f7fa 0%, #6c868e 100%);
-    color: white;
+    color: #f1efe8;
 }
 
 .event-hero h2 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
-    color: white;
+    color: #f1efe8;
 }
 
 .ceremony-hero h2 {
-    color: white;
+    color: #f1efe8;
 }
 
 .event-hero .location {
     font-size: 1.3rem;
     margin-bottom: 0.5rem;
-    color: #ecf0f1;
+    color: #f1efe8;
 }
 
 .ceremony-hero .location {
-    color: #ecf0f1;
+    color: #f1efe8;
 }
 
 .event-hero .subtitle {
     font-size: 1.1rem;
     font-style: italic;
-    color: #ecf0f1;
+    color: #f1efe8;
 }
 
 .ceremony-hero .subtitle {
-    color: #ecf0f1;
+    color: #f1efe8;
 }
 
 .hero-image {
@@ -393,7 +393,7 @@ main {
     text-align: center;
     padding: 2rem;
     background: #7c5e4f;
-    color: white;
+    color: #f1efe8;
     border-radius: 10px;
     margin-bottom: 3rem;
 }
@@ -455,7 +455,7 @@ footer {
     text-align: center;
     padding: 2rem;
     background: #6c868e;
-    color: white;
+    color: #f1efe8;
     margin-top: 3rem;
 }
 
@@ -465,7 +465,7 @@ footer p {
 }
 
 footer a {
-    color: #D4AF37;
+    color: #dcc5a1;
     text-decoration: none;
 }
 
