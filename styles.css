@@ -157,8 +157,8 @@ main {
 }
 
 .event-card.highlight .btn:hover {
-    background-color: white;
-    color: #667eea;
+    background-color: #f1efe8;
+    color: #6c868e;
 }
 
 .timeline {
@@ -309,6 +309,16 @@ main {
     left: 0;
     color: #27ae60;
     font-weight: bold;
+}
+
+.detail-card a {
+    color: #7c5e4f;
+    text-decoration: none;
+}
+
+.detail-card a:hover {
+    color: #94b4a3;
+    text-decoration: underline;
 }
 
 .detail-card em {
