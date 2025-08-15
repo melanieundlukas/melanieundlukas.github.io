@@ -120,11 +120,11 @@ main {
     font-size: 1.1rem;
     font-weight: bold;
     margin-bottom: 0.5rem;
-    color: #7c5e4f;
+    color: #94b4a3;
 }
 
 .event-card.highlight .date {
-    color: #7c5e4f;
+    color: #94b4a3;
 }
 
 .event-card .description {
@@ -192,7 +192,7 @@ main {
 }
 
 .timeline-marker.highlight {
-    background-color: #7c5e4f;
+    background-color: #94b4a3;
 }
 
 .timeline-content h4 {
@@ -392,7 +392,7 @@ main {
 .rsvp-section {
     text-align: center;
     padding: 2rem;
-    background: linear-gradient(135deg, #B8860B 0%, #D4AF37 100%);
+    background: #7c5e4f;
     color: white;
     border-radius: 10px;
     margin-bottom: 3rem;
@@ -431,7 +431,7 @@ main {
 
 .schedule-item .time {
     font-weight: bold;
-    color: #D4AF37;
+    color: #94b4a3;
     margin-right: 1rem;
     min-width: 150px;
 }
