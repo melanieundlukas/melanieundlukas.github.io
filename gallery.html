@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery - Our Wedding Journey</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Photo Gallery</h1>
+        <p>Moments from our engagement photo session</p>
+    </header>
+
+    <main>
+        <section class="gallery-section">
+            <div class="gallery-intro">
+                <p>These special moments were captured during our engagement photo session. Click any photo to view it in full size.</p>
+                <p><em>Photos by <a href="https://www.instagram.com/photoborodina/" target="_blank">@photoborodina</a></em></p>
+            </div>
+
+            <div class="photo-gallery">
+                <div class="gallery-item" data-index="0">
+                    <img src="assets/img/color-small/Melanie_Lukas_001.jpg"
+                         alt="Wedding photo 1"
+                         loading="lazy"
+                         class="gallery-thumbnail">
+                </div>
+                <div class="gallery-item" data-index="1">
+                    <img src="assets/img/color-small/Melanie_Lukas_002.jpg"
+                         alt="Wedding photo 2"
+                         loading="lazy"
+                         class="gallery-thumbnail">
+                </div>
+                <div class="gallery-item" data-index="2">
+                    <img src="assets/img/color-small/Melanie_Lukas_003.jpg"
+                         alt="Wedding photo 3"
+                         loading="lazy"
+                         class="gallery-thumbnail">
+                </div>
+                <div class="gallery-item" data-index="3">
+                    <img src="assets/img/color-small/Melanie_Lukas_004.jpg"
+                         alt="Wedding photo 4"
+                         loading="lazy"
+                         class="gallery-thumbnail">
+                </div>
+                <div class="gallery-item" data-index="4">
+                    <img src="assets/img/color-small/Melanie_Lukas_005.jpg"
+                         alt="Wedding photo 5"
+                         loading="lazy"
+                         class="gallery-thumbnail">
+                </div>
+                <div class="gallery-item" data-index="5">
+                    <img src="assets/img/color-small/Melanie_Lukas_006.jpg"
+                         alt="Wedding photo 6"
+                         loading="lazy"
+                         class="gallery-thumbnail">
+                </div>
+                <div class="gallery-item" data-index="6">
+                    <img src="assets/img/color-small/Melanie_Lukas_007.jpg"
+                         alt="Wedding photo 7"
+                         loading="lazy"
+                         class="gallery-thumbnail">
+                </div>
+                <div class="gallery-item" data-index="7">
+                    <img src="assets/img/color-small/Melanie_Lukas_008.jpg"
+                         alt="Wedding photo 8"
+                         loading="lazy"
+                         class="gallery-thumbnail">
+                </div>
+                <div class="gallery-item" data-index="8">
+                    <img src="assets/img/color-small/Melanie_Lukas_009.jpg"
+                         alt="Wedding photo 9"
+                         loading="lazy"
+                         class="gallery-thumbnail">
+                </div>
+                <div class="gallery-item" data-index="9">
+                    <img src="assets/img/color-small/Melanie_Lukas_010.jpg"
+                         alt="Wedding photo 10"
+                         loading="lazy"
+                         class="gallery-thumbnail">
+                </div>
+                <div class="gallery-item" data-index="10">
+                    <img src="assets/img/color-small/Melanie_Lukas_011.jpg"
+                         alt="Wedding photo 11"
+                         loading="lazy"
+                         class="gallery-thumbnail">
+                </div>
+                <div class="gallery-item" data-index="11">
+                    <img src="assets/img/color-small/Melanie_Lukas_012.jpg"
+                         alt="Wedding photo 12"
+                         loading="lazy"
+                         class="gallery-thumbnail">
+                </div>
+                <div class="gallery-item" data-index="12">
+                    <img src="assets/img/color-small/Melanie_Lukas_013.jpg"
+                         alt="Wedding photo 13"
+                         loading="lazy"
+                         class="gallery-thumbnail">
+                </div>
+                <div class="gallery-item" data-index="13">
+                    <img src="assets/img/color-small/Melanie_Lukas_014.jpg"
+                         alt="Wedding photo 14"
+                         loading="lazy"
+                         class="gallery-thumbnail">
+                </div>
+                <div class="gallery-item" data-index="14">
+                    <img src="assets/img/color-small/Melanie_Lukas_015.jpg"
+                         alt="Wedding photo 15"
+                         loading="lazy"
+                         class="gallery-thumbnail">
+                </div>
+                <div class="gallery-item" data-index="15">
+                    <img src="assets/img/color-small/Melanie_Lukas_016.jpg"
+                         alt="Wedding photo 16"
+                         loading="lazy"
+                         class="gallery-thumbnail">
+                </div>
+                <div class="gallery-item" data-index="16">
+                    <img src="assets/img/color-small/Melanie_Lukas_017.jpg"
+                         alt="Wedding photo 17"
+                         loading="lazy"
+                         class="gallery-thumbnail">
+                </div>
+                <div class="gallery-item" data-index="17">
+                    <img src="assets/img/color-small/Melanie_Lukas_018.jpg"
+                         alt="Wedding photo 18"
+                         loading="lazy"
+                         class="gallery-thumbnail">
+                </div>
+                <div class="gallery-item" data-index="18">
+                    <img src="assets/img/color-small/Melanie_Lukas_019.jpg"
+                         alt="Wedding photo 19"
+                         loading="lazy"
+                         class="gallery-thumbnail">
+                </div>
+                <div class="gallery-item" data-index="19">
+                    <img src="assets/img/color-small/Melanie_Lukas_020.jpg"
+                         alt="Wedding photo 20"
+                         loading="lazy"
+                         class="gallery-thumbnail">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox" style="display: none;">
+        <button class="lightbox-close" aria-label="Close lightbox">&times;</button>
+        <button class="lightbox-prev" aria-label="Previous photo">&#8249;</button>
+        <button class="lightbox-next" aria-label="Next photo">&#8250;</button>
+        <div class="lightbox-content">
+            <img id="lightbox-image" src="" alt="">
+            <div class="lightbox-counter">
+                <span id="lightbox-current">1</span> / <span id="lightbox-total">20</span>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Beautiful moments captured forever</p>
+        <p>Contact us: <a href="mailto:melanieandlukas@lpag.de">melanieandlukas@lpag.de</a></p>
+    </footer>
+
+    <script src="assets/js/lightbox.js"></script>
+</body>
+</html>
